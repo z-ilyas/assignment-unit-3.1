@@ -105,6 +105,5 @@ console.log('My favorite foods are,', favoriteFoods.join(' and '));
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
-let animalsAndFoods = ['fish', 'cat', 'bird', 'dog', 'tuna', 'cupcakes', 'mango', 'canjeero', 'pasta']
-animalsAndFoods.sort();
-console.log('The combined array and sorted in an alphabetical order,', animalsAndFoods);
+let animalsAndFoods = animalArray.concat(favoriteFoods);
+console.log('The new array is,', animalsAndFoods);
