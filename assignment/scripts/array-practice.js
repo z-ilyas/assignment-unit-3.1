@@ -92,16 +92,20 @@ console.log('My favorite foods are,', favoriteFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
-favoriteFoods.sort();
+favoriteFoods.sort((a,b)=>b.localeCompare(a));
 console.log('The food has been sorted in reverse alphabetical order,', favoriteFoods);
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-
+let likedFoods = ('tuna and cupcakes and mango and canjeero and pasta ');
+console.log('My liked foods are,', likedFoods);
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+let animalsAndFoods = ['fish', 'cat', 'bird', 'dog', 'tuna', 'cupcakes', 'mango', 'canjeero', 'pasta']
+animalsAndFoods.sort();
+console.log('The combined array and sorted in an alphabetical order,', animalsAndFoods);
